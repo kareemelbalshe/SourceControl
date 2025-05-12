@@ -1,4 +1,4 @@
-class HelloITI {
+export class HelloITI {
   printHelloTI() {
     console.log("Hello ITI");
   }
@@ -8,6 +8,3 @@ class HelloITI {
   }
 }
 
-const iti = new HelloITI();
-iti.printHelloTI();
-iti.printHelloGit();
