@@ -1,13 +1,14 @@
-import { HelloWorld } from "./HelloWorld.js";
 import { HelloSwift } from "./HelloSwift.js";
 import { HelloITI } from "./HelloITI.js";
+import { Kareem } from "./kareem.js";
 
-const hello = new HelloWorld();
-hello.printHelloWorld();
+const kareem = new Kareem();
 
 const swift = new HelloSwift();
-swift.printHelloWorld();
 
 const iti = new HelloITI();
-iti.printHelloTI();
-iti.printHelloGit();
+
+document.getElementById("title").innerHTML = kareem.printHello();
+document.getElementById("subtitle").innerHTML = swift.printHelloWorld();
+document.getElementById("paragraph").innerHTML = iti.printHelloTI();
+document.getElementById("paragraphTwo").innerHTML = iti.printHelloGit();
